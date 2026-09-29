@@ -1,3 +1,23 @@
+/* Name:Aswani p.j
+   Roll No :CS05
+   Date :
+*******************************
+Ex No:7
+Aim: Implementation of Queue using Linkedlist. 
+**********Algorithm************
+
+Step1:Start
+Step2:Initialize front = NULL and rear = NULL.
+Step3:Display the menu: Enqueue, Dequeue, Display, Exit.
+Step4:Read the user's choice.
+Step5:If Enqueue:Create a new node.Insert the element at the rear.
+Step6:If Dequeue:Check whether the queue is empty.If empty, display Queue Underflow.Otherwise, delete the element from the front.
+Step7:If Display:Check whether the queue is empty.If not empty, display all elements from front to rear.
+Step8:If Exit, terminate the program.
+Step9:Repeat steps 3–8 until the user chooses Exit.
+Step10:Stop.
+******Source******
+*/
 #include<stdio.h>
 #include<stdlib.h>
 struct node
