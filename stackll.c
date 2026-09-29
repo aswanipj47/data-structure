@@ -2,7 +2,7 @@
    Roll No :CS05
    Date :
 *******************************
-Ex No:2
+Ex No:6
 Aim: Implementation of stack using Linked list
 **********Algorithm************
 
