@@ -2,8 +2,8 @@
    Roll No :CS05
    Date :
 *******************************
-Ex No:1
-Aim: Implementation of stack using arrays
+Ex No:2
+Aim: Implementation of stack using Linked list
 **********Algorithm************
 
 Step1:Start
