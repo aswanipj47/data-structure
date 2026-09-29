@@ -1,3 +1,23 @@
+/* Name:Aswani p.j
+   Roll No :CS05
+   Date :
+*******************************
+Ex No:1
+Aim: Implementation of stack using arrays
+**********Algorithm************
+
+Step1:Start
+Step2:Set top = NULL.
+Step3:Display the menu: Push, Pop, Peek, Exit.
+Step4:Read the user's choice.
+Step5:If Push:Create a new node, Enter data.Store data in the node.Link the node to top.Make the new node as top.
+Step6:If Pop:Check whether top == NULL.If yes, display Stack Underflow.Otherwise, remove the top node and move top to the next node.
+Step7:If Peek:Check whether top == NULL.If yes, display Stack is Empty.Otherwise, display top->data.
+Step8:If Exit: Stop the program.
+Step9:Repeat the menu until the user selects Exit.
+Step10:Stop.
+******Source******
+*/
 #include<stdio.h>
 #include<stdlib.h>
   struct Node
