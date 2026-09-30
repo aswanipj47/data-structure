@@ -1,3 +1,24 @@
+/* Name:Aswani p.j
+   Roll No :CS05
+   Date :
+*******************************
+Ex No:8
+Aim: Implementation of Doubly Linkedlist. 
+
+
+**********Algorithm************
+
+Step1:Start
+Step2:Create a doubly linked list with data, next, and prev.
+Step3:Insert nodes at the beginning, end, and given position.
+Step4:Display the list in forward and reverse order.
+Step5:Delete nodes from the beginning, end, and given position.
+Step6:Display the list after deletion.
+Step7:Stop.
+
+
+******Source code******
+*/
 #include <stdio.h>
 #include <stdlib.h>
 typedef struct Node {
