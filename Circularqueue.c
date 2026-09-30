@@ -1,3 +1,29 @@
+/* Name:Aswani p.j
+   Roll No :CS05
+   Date :
+*******************************
+Ex No:9
+Aim: Implementation of circular Linkedlist. 
+
+
+**********Algorithm************
+
+Step1:Start
+Step2:Set front = -1 and rear = -1.
+Step3:Display the menu.
+Step4:Read the choice.
+Step5:If Enqueue, insert an element into the queue.
+Step6:If Dequeue, remove an element from the queue. 
+Step7:If display, display the queue elements. 
+Step8:If exit, stop the program. 
+Step9:Repeat until Exit. 
+Step10:Stop.
+
+
+******Source code******
+*/
+
+
 #include <stdio.h>
 #define SIZE 5
 int main()
