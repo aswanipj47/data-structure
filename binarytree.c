@@ -62,7 +62,7 @@ int main(){
         struct node*root;
         struct node*node[10];
         int n,i,data;
-        printf("Enter the noof nodes:\n");
+        printf("Enter the no of nodes:\n");
         scanf("%d",&n);
         printf("Enter the elements:\n");
         for(i=0;i<n;i++){
@@ -78,11 +78,24 @@ int main(){
         }
         printf("Preorder:\n");
         preorder(root);
-        printf("\nInoredr:\n");
+        printf("\nInorder:\n");
         inorder(root);
         printf("\nPostorder:\n");
         postorder(root);
+        printf("\n");
         return 0;
 }
 
+/* Output
 
+Enter the no of nodes:
+4
+Enter the elements:
+10 20 30 40
+Preorder:
+10204030
+Inorder:
+40201030
+Postorder:
+4020301
+*/
