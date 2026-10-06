@@ -9,14 +9,14 @@ Aim: Implementation of stack using arrays
 **********Algorithm************
 
 Step1:Start
-Step2:Create stack of size 6.
-Step3:Set top = -1.
-Step4:Enter a value.
-Step5:If top == 5, print Overflow.
-Step6:Otherwise, increase top and push the value.
-Step7:If stack is not empty, pop the top element.
-Step8:Decrease top.
-Step9:If stack is not empty, display the top element.
+Step2:Set top = -1.
+Step3:Read array size.
+Step4:Display menu.
+Step5:Choose Push, Pop, Peek or Exit.
+Step6:Push: If stack is full → Overflow, otherwise insert element.
+Step7:Pop: If stack is empty → Underflow, otherwise remove top element.
+Step8:Peek: Display the top element.
+Step9:Repeat until Exit.
 Step10:Stop.
 
 
