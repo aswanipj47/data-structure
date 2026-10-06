@@ -2,21 +2,21 @@
    Roll No :CS05
    Date :
 *******************************
-Ex No:1
-Aim: Implementation of stack using arrays
+Ex No:9
+Aim: Implementation  of  binary  tree  and  traversals.
 
 
 **********Algorithm************
 
 Step1:Start
-Step2:Set top = -1.
-Step3:Read array size.
-Step4:Display menu.
-Step5:Choose Push, Pop, Peek or Exit.
-Step6:Push: If stack is full → Overflow, otherwise insert element.
-Step7:Pop: If stack is empty → Underflow, otherwise remove top element.
-Step8:Peek: Display the top element.
-Step9:Repeat until Exit.
+Step2:Define a node with data, left, and right.
+Step3:Create n nodes and store the given elements.
+Step4:Set the first node as the root.
+Step5:Connect the left child using 2*i+1 and the right child using 2*i+2.
+Step6:Perform Preorder traversal: Root → Left → Right.
+Step7:Perform Inorder traversal: Left → Root → Right.
+Step8:Perform Postorder traversal: Left → Right → Root.
+Step9:Display all three traversals.
 Step10:Stop.
 
 
