@@ -4,6 +4,8 @@
 *******************************
 Ex No:6
 Aim: Implementation of stack using Linked list
+
+
 **********Algorithm************
 
 Step1:Start
@@ -15,9 +17,13 @@ Step6:If Pop:Check whether top == NULL.If yes, display Stack Underflow.Otherwise
 Step7:If Peek:Check whether top == NULL.If yes, display Stack is Empty.Otherwise, display top->data.
 Step8:If Exit: Stop the program.
 Step9:Repeat the menu until the user selects Exit.
-Step10:Stop.
-******Source******
+Step10:Stop
+
+
+******Source code******
 */
+
+
 #include<stdio.h>
 #include<stdlib.h>
   struct Node
@@ -81,7 +87,7 @@ Step10:Stop.
            peek();
            break;
     case 4:
-           printf("exit\n");
+           exit(0);
     default:
            printf("invalid choice\n");
   }
@@ -89,4 +95,42 @@ Step10:Stop.
   while(c!=4);
   return 0;
   }
-            
+/* Output
+
+   1.push
+2.pop
+3.peep
+4.exit
+enter the choice
+1
+enter the data:10
+pushed data=10
+1.push
+2.pop
+3.peep
+4.exit
+enter the choice
+1
+enter the data:20
+pushed data=20
+1.push
+2.pop
+3.peep
+4.exit
+enter the choice
+2
+stack pop into data=20
+1.push
+2.pop
+3.peep
+4.exit
+enter the choice
+3
+top data=10
+1.push
+2.pop
+3.peep
+4.exit
+enter the choice
+4
+*/

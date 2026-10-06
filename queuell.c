@@ -4,7 +4,9 @@
 *******************************
 Ex No:7
 Aim: Implementation of Queue using Linkedlist. 
-**********Algorithm************
+
+
+***********Algorithm************
 
 Step1:Start
 Step2:Initialize front = NULL and rear = NULL.
@@ -16,8 +18,12 @@ Step7:If Display:Check whether the queue is empty.If not empty, display all elem
 Step8:If Exit, terminate the program.
 Step9:Repeat steps 3–8 until the user chooses Exit.
 Step10:Stop.
-******Source******
+
+
+******Source code******
 */
+
+
 #include<stdio.h>
 #include<stdlib.h>
 struct node
@@ -118,5 +124,52 @@ while(c!=4);
   return 0;
 }
 
+/*Output
 
+  1.enqueue
+2.dequeue
+3.display
+4.exit
+enter the choice:1
+enter value:10
+enqueued element:10
+1.enqueue
+2.dequeue
+3.display
+4.exit
+enter the choice:1
+enter value:20
+enqueued element:20
+1.enqueue
+2.dequeue
+3.display
+4.exit
+enter the choice:1
+enter value:30
+enqueued element:30
+1.enqueue
+2.dequeue
+3.display
+4.exit
+enter the choice:3
+queue element: 10 20 30
+1.enqueue
+2.dequeue
+3.display
+4.exit
+enter the choice:2
+dequeued element:10
+1.enqueue
+2.dequeue
+3.display
+4.exit
+enter the choice:3
+queue element: 20 30
+1.enqueue
+2.dequeue
+3.display
+4.exit
+enter the choice:4
+exit
+*/
 

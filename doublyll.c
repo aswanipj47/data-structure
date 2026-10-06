@@ -19,6 +19,8 @@ Step7:Stop.
 
 ******Source code******
 */
+
+
 #include <stdio.h>
 #include <stdlib.h>
 typedef struct Node {
@@ -212,3 +214,11 @@ int main()
 
     return 0;
 }
+/* Output
+
+   After Insertions:
+Forward List: 5 15 10 20
+Reverse List: 20 10 15 5
+After Deletions:
+Forward List: 15
+*/

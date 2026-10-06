@@ -4,6 +4,8 @@
 *******************************
 Ex No:1
 Aim: Implementation of stack using arrays
+
+
 **********Algorithm************
 
 Step1:Start
@@ -16,47 +18,66 @@ Step7:If stack is not empty, pop the top element.
 Step8:Decrease top.
 Step9:If stack is not empty, display the top element.
 Step10:Stop.
-******Source******
+
+
+******Source code******
 */
 
+
 #include<stdio.h>
-int main()
-{
-int stack[6],top=-1,value;
-for(int i=0;i<=6;i++){
-printf("Enter value:");
-scanf("%d",&value);
-if(top==5)
-  {
-    printf("overflow \n");
-  }
+int s[10],n,top=-1;
+void push(int n){
+  if(top==n-1){
+    printf("overflow\n");
+    return ;
+}
+else{
+  top+=1;
+  printf("enter the data\n");
+  scanf("%d",&s[top]);
+}
+}
+void pop(){
+  if(top==-1){
+    printf("underflow\n");
+    return;}
+  else{
+    printf("element removed\n");
+    top-=1;}
+}
+void peek(){
+  if(top==-1){
+    printf("Stack empty\n");
+    return;
+}
   else
-  {
-    top++;
-    stack[top]=value;
-    printf("pushed an element into stack:%d\n",value);
-  }
+    printf("top=%d\n",s[top]);
 }
-
-  if(top==-1)
-{
-  printf("stack overflow");
-}
-else
-{
-  printf("pop an element into stack:%d\n",stack[top]);
-  top--;
-}
-if(top==-1)
-{
-  printf("stack is empty\n");
-}
-else
-{
-  printf("top element is:%d\n",stack[top]);
-}
+int main(){
+  int c;
+  printf("Enter size of array\n");
+  scanf("%d",&n);
+  do{
+        printf("1.push\n2.pop\n3.peek\n4.exit\n");
+        scanf("%d",&c);
+        switch(c){
+          case 1:
+                push(n);
+                break;
+          case 2:
+                pop();
+                break;
+          case 3:
+                peek();
+                break;
+          case 4:
+                printf("exit\n");
+                break;
+          default:
+                printf("invalid");
+                break;
+        }
+  }while(c!=4);
 return 0;
-  }
-
-
+}
 

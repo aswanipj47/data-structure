@@ -4,6 +4,8 @@
 *******************************
 Ex No:2
 Aim: Implementation of queue using arrays. 
+
+
 **********Algorithm************
 
 Step1:Start
@@ -16,47 +18,76 @@ Step7:If the queue is empty, display Queue Underflow.
 Step8:Otherwise, remove the element from front and increase front.
 Step9:If the queue is not empty, display the front element.
 Step10:Stop.
-******Source******
+
+
+******Source code******
 */
+
+
 #include<stdio.h>
-int main()
- {
-    int queue[5],front=-1,rear=-1,value;
-    int i;
-    for(i=0;i<5;i++)
-{
-printf("enter value:");
-scanf("%d",&value);
-if(rear==4)
-{
-  printf("queue overflow\n");
+#define SIZE 5
+int q[5],rear=-1,front=-1;
+void enqueue(){
+  int data;
+  if(rear==SIZE-1){
+    printf("overflow\n");
+    return ;
+  }
+  else{
+    printf("enter the data\n");
+    scanf("%d",&data);
+    if(front==-1&&rear==-1)
+      front++;
+    rear++;
+    q[rear]=data;
+  }
 }
-else
-{
-  if(front==-1)
-    front=0;
-  rear++;
-  queue[rear]= value;
-  printf("enqueued element:%d\n",value);
-      }
-      }
-      if(front==-1||front>rear)
-      {
-      printf("queue underflow\n");
-      }
-      else
-      {
-      printf("dequeued element:%d\n",queue[front]);
-  front++;
-      }
-if(front ==-1||front>rear)
-{
-    printf("queue is empty\n");
+void dequeue(){
+  if(front==-1 && rear==-1){
+    printf("underflow\n");
+    return;
+  }
+  else{
+    printf("element removed %d\n",q[front++]);
+    if(front>rear){
+      front=-1;
+      rear=-1;
     }
-else
-{
-  printf("front element:%d\n",queue[front]);
+  }
 }
+void display(){
+  if(rear==-1)
+    printf("Queue Empty\n");
+  else{
+    for(int i=front;i<=rear;i++)
+      printf("%d\t",q[i]);
+  }
+}
+int main(){
+  int c;
+
+  do{
+        printf("\nQueue Array\n");
+        printf("1.enqueue\n2.dequeue\n3.display\n4.exit\n");
+        scanf("%d",&c);
+        switch(c){
+          case 1:
+                enqueue();
+                break;
+          case 2:
+                dequeue();
+                break;
+          case 3:
+                display();
+                break;
+          case 4:
+                printf("exit\n");
+                 break;
+          default:
+                printf("invalid");
+                break;
+        }
+  }while(c!=4);
 return 0;
 }
 
