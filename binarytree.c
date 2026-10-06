@@ -1,3 +1,29 @@
+/* Name:Aswani p.j
+   Roll No :CS05
+   Date :
+*******************************
+Ex No:1
+Aim: Implementation of stack using arrays
+
+
+**********Algorithm************
+
+Step1:Start
+Step2:Set top = -1.
+Step3:Read array size.
+Step4:Display menu.
+Step5:Choose Push, Pop, Peek or Exit.
+Step6:Push: If stack is full → Overflow, otherwise insert element.
+Step7:Pop: If stack is empty → Underflow, otherwise remove top element.
+Step8:Peek: Display the top element.
+Step9:Repeat until Exit.
+Step10:Stop.
+
+
+******Source code******
+*/
+
+
 #include<stdio.h>
 #include<stdlib.h>
 struct node{
