@@ -80,4 +80,59 @@ int main(){
   }while(c!=4);
 return 0;
 }
+/* Output
+Enter size of array
+5
 
+1.push
+2.pop
+3.peek
+4.exit
+1
+enter the data
+10
+
+1.push
+2.pop
+3.peek
+4.exit
+1
+enter the data
+20
+
+1.push
+2.pop
+3.peek
+4.exit
+1
+enter the data
+30
+
+1.push
+2.pop
+3.peek
+4.exit
+3
+top=30
+
+1.push
+2.pop
+3.peek
+4.exit
+2
+element removed
+
+1.push
+2.pop
+3.peek
+4.exit
+3
+top=20
+
+1.push
+2.pop
+3.peek
+4.exit
+4
+exit
+*/
