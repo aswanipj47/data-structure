@@ -2,7 +2,7 @@
    Roll No :CS05
    Date :
 *******************************
-Ex No:8
+Ex No:7
 Aim: Implementation of Doubly Linkedlist. 
 
 
