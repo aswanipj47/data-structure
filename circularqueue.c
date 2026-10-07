@@ -3,7 +3,7 @@
    Date :
 *******************************
 Ex No:3
-Aim: Implementation of circular Linkedlist. 
+Aim:  Implementation  of  circular  queue  using  arrays.
 
 
 **********Algorithm************
