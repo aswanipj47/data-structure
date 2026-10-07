@@ -89,4 +89,64 @@ int main(){
   }while(c!=4);
 return 0;
 }
+/* Output
 
+Queue Array
+1.enqueue
+2.dequeue
+3.display
+4.exit
+1
+enter the data
+10
+
+Queue Array
+1.enqueue
+2.dequeue
+3.display
+4.exit
+1
+enter the data
+20
+
+Queue Array
+1.enqueue
+2.dequeue
+3.display
+4.exit
+1
+enter the data
+30
+
+Queue Array
+1.enqueue
+2.dequeue
+3.display
+4.exit
+3
+10    20    30
+
+Queue Array
+1.enqueue
+2.dequeue
+3.display
+4.exit
+2
+element removed 10
+
+Queue Array
+1.enqueue
+2.dequeue
+3.display
+4.exit
+3
+20    30
+
+Queue Array
+1.enqueue
+2.dequeue
+3.display
+4.exit
+4
+exit
+*/
