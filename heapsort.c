@@ -1,3 +1,27 @@
+/* Name:Aswani p.j
+   Roll No :CS05
+   Date :
+*******************************
+Ex No:12
+Aim: Implementation  of  heap  sort.
+
+
+**********Algorithm************
+
+Step1:Start
+Step2:Read the number of elements n.
+Step3:Read the array elements.
+Step4:Build a Max Heap from the array.
+Step5:Swap the first element with the last element.
+Step6:Reduce the heap size by 1.
+Step7:Apply heapify to maintain the Max Heap.
+Step8:Repeat steps 5–7 until all elements are sorted.
+Step9:Display the sorted array.
+Step10:Stop.
+
+
+******Source code******
+*/
 #include<stdio.h>
 int i,temp;
 void heapify(int arr[],int n,int i){
