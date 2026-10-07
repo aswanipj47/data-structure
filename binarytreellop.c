@@ -1,3 +1,27 @@
+/* Name:Aswani p.j
+   Roll No :CS05
+   Date :
+*******************************
+Ex No:10
+Aim: Implementation  of  binary  search  trees  and  perform  the    operations  on  BST.
+
+
+
+**********Algorithm************
+
+Step1:Start
+Step2:Create an empty BST.
+Step3:Enter the number of nodes and values.
+Step4:Insert each value into the BST.
+Step5:Display the BST using inorder traversal.
+Step6:Enter a value and search it in the BST.
+Step7:Enter a value and delete it from the BST.
+Step8:Display the BST after deletion.
+Step9:Stop.
+
+
+******Source code******
+*/
 #include<stdio.h>
 #include<stdlib.h>
 struct node{
