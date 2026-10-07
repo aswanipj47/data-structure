@@ -100,7 +100,7 @@ void insertAtPosition(Node** head, int data, int position)
 
 void deleteAtBeginning(Node** head)
 {
-    // checking if the DLL is empty
+    
     if (*head == NULL) {
         printf("The list is already empty.\n");
         return;
@@ -115,7 +115,7 @@ void deleteAtBeginning(Node** head)
 
 void deleteAtEnd(Node** head)
 {
-    // checking if DLL is empty
+    
     if (*head == NULL) {
         printf("The list is already empty.\n");
         return;
@@ -199,15 +199,15 @@ int main()
     insertAtEnd(&head, 10);
     insertAtEnd(&head, 20);
     insertAtBeginning(&head, 5);
-    insertAtPosition(&head, 15, 2); // List: 5 15 10 20
+    insertAtPosition(&head, 15, 2);
 
     printf("After Insertions:\n");
     printListForward(head);
     printListReverse(head);
 
-    deleteAtBeginning(&head); // List: 15 10 20
-    deleteAtEnd(&head); // List: 15 10
-    deleteAtPosition(&head, 2); // List: 15
+    deleteAtBeginning(&head); 
+    deleteAtEnd(&head); 
+    deleteAtPosition(&head, 2);
 
     printf("After Deletions:\n");
     printListForward(head);
