@@ -1,3 +1,25 @@
+/* Name:Aswani p.j
+   Roll No :CS05
+   Date :
+*******************************
+Ex No:4
+Aim: Implementation of Linkedlists and operations on linkedlists. 
+
+
+***********Algorithm************
+
+Step1:Start
+Step2:Create an empty linked list with head = NULL.
+Step3:Insert: Create a new node, enter data, and add it at the end of the list.
+Step4:Delete: If the list is empty, display empty; otherwise, delete the first node.
+Step5:Display: Traverse from head to NULL and print each node.
+Step6:Repeat the operations using the menu until the user selects Exit.
+Step7:Stop.
+
+
+******Source code******
+*/
+
 #include<stdio.h>
 #include<stdlib.h>
   struct node{
