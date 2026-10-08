@@ -1,33 +1,26 @@
-  /*
-  Name: Anett Arun
-  RollNo: CS02
-  Date:
-  
-  *******************************************
-  
-  Pgm No: 7
-  Aim: Implementation of doubly linkedlist
-  
-  *******************************************
-  
-  Algorithm:
-  
-  Step 1:
-  Step 2:
-  Step 3:
-  Step 4:
-  Step 5:
-  Step 6:
-  Step 7:
-  Step 8:
-  Step 9:
-  Step 10:
-  Step 11:Stop.
-  
-  ******************************************
-  
-  Sourse Code
-  */
+/* Name:Aswani p.j
+   Roll No :CS05
+   Date :
+*******************************
+Ex No:8
+Aim: Implementation of circular linkedlist
+
+
+**********Algorithm************
+
+Step1:Start
+Step2:Create a circular linked list by inserting nodes at the end.
+Step3:If the list is empty, make the new node as head.
+Step4:Otherwise, find the last node and connect the new node to head.
+Step5:Display all nodes until temp reaches head again.
+Step6:To delete a node, search for the given value.
+Step7:If the value is found, adjust the links and delete the node.
+Step8:Display the list after deletion.
+Step9:Stop
+
+
+******Source code******
+*/
   #include <stdio.h>
   #include <stdlib.h>
   struct Node {
