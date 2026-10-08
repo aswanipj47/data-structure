@@ -2,7 +2,7 @@
    Roll No :CS05
    Date :
 *******************************
-Ex No:7
+Ex No:6
 Aim: Implementation of Queue using Linkedlist. 
 
 
