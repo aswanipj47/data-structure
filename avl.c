@@ -1,3 +1,26 @@
+/* Name:Aswani p.j
+   Roll No :CS05
+   Date :
+*******************************
+Ex No:19
+Aim: Implementation of   AVL  tree (balanced  tree).
+
+
+**********Algorithm************
+
+Step1:Start
+Step2:Insert the value into the AVL tree.
+Step3:Check the balance of the tree.
+Step4:If unbalanced, perform the required rotation.
+Step5:Search for a key if needed.
+Step6:Display the tree using inorder, preorder, or postorder.
+Step7:Repeat until Exit.
+Step8:Stop.
+
+
+******Source code******
+*/
+
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -188,3 +211,39 @@ int main() {
     }
     return 0;
 }
+/* Output
+==== AVL Tree Menu =====
+1. Insertion
+2. Search
+3. Inorder Traversal
+4. Preorder Traversal
+5. Postorder Traversal
+6. Exit
+
+Enter your choice: 1
+Enter value to insert: 30
+Inserted and balanced successfully.
+
+Enter your choice: 1
+Enter value to insert: 20
+Inserted and balanced successfully.
+
+Enter your choice: 1
+Enter value to insert: 10
+Inserted and balanced successfully.
+
+Enter your choice: 3
+Inorder Traversal: 10 20 30
+
+Enter your choice: 4
+Preorder Traversal: 20 10 30
+
+Enter your choice: 5
+Postorder Traversal: 10 30 20
+
+Enter your choice: 2
+Enter key: 20
+Key is found
+
+Enter your choice: 6
+*/
