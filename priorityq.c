@@ -1,3 +1,25 @@
+/* Name:Aswani p.j
+   Roll No :CS05
+   Date :
+*******************************
+Ex No:18
+Aim: Implementation  of  priority queue.
+
+
+**********Algorithm************
+
+Step1:Start
+Step2:Create an empty priority queue.
+Step3:Enqueue: Insert data and its priority.
+Step4:Dequeue: Find the highest-priority element and remove it.
+Step5:Display: Show all elements and their priorities.
+Step6:Repeat the above operations until Exit.
+Step7:Stop.
+
+
+******Source code******
+*/
+
 
 #include <stdio.h>
 #define MAX 100
@@ -80,3 +102,30 @@ int main() {
     }
     return 0;
 }
+/* Output
+1. Enqueue
+2. Dequeue
+3. Display
+4. Exit
+Enter choice: 1
+Enter value and priority: 10 2
+
+Enter choice: 1
+Enter value and priority: 20 5
+
+Enter choice: 1
+Enter value and priority: 30 3
+
+Enter choice: 3
+Value: 10, Priority: 2
+Value: 20, Priority: 5
+Value: 30, Priority: 3
+
+Enter choice: 2
+
+Enter choice: 3
+Value: 10, Priority: 2
+Value: 30, Priority: 3
+
+Enter choice: 4
+*/
