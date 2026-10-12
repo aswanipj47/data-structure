@@ -1,3 +1,31 @@
+/* Name:Aswani p.j
+   Roll No :CS05
+   Date :
+*******************************
+Ex No:17
+Aim: Implementation  of  Deque (double ended  queue).
+
+
+**********Algorithm************
+
+Step1:Start
+Step2:Create an empty deque.
+Step3:Insert Front: Add a node at the front.
+Step4:Insert Rear: Add a node at the rear.
+Step5:Delete Front: Remove the front node.
+Step6:Delete Rear: Remove the rear node.
+Step7:Get Front: Display the front element.
+Step8:Get Rear: Display the rear element.
+Step9:Get Size: Display the number of elements.
+Step10:Check Empty: Check whether deque is empty.
+Step11:Erase: Delete all elements.
+Step12:Repeat operations until Exit.
+Step13:Stop.
+
+
+******Source code******
+*/
+
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -175,3 +203,45 @@ int main() {
 
     return 0;
 }
+/* Output
+--- Deque Operations Menu ---
+1. Insert Front
+2. Insert Rear
+3. Delete Front
+4. Delete Rear
+5. Get Front Element
+6. Get Rear Element
+7. Get Current Size
+8. Check if Empty
+9. Erase Deque
+10. Exit
+
+Enter your choice (1-10): 1
+Enter integer value to insert at front: 10
+Inserted 10 at the front.
+
+Enter your choice (1-10): 2
+Enter integer value to insert at rear: 20
+Inserted 20 at the rear.
+
+Enter your choice (1-10): 5
+Front element: 10
+
+Enter your choice (1-10): 6
+Rear element: 20
+
+Enter your choice (1-10): 7
+Current size of deque: 2
+
+Enter your choice (1-10): 3
+Deleted front element: 10
+
+Enter your choice (1-10): 4
+Deleted rear element: 20
+
+Enter your choice (1-10): 8
+Yes, the deque is empty.
+
+Enter your choice (1-10): 10
+Exiting program. All memory freed.
+*/
