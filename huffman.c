@@ -1,3 +1,27 @@
+/* Name:Aswani p.j
+   Roll No :CS05
+   Date :
+*******************************
+Ex No:16
+Aim: Implementation  of  Huffman  algorithm.
+
+
+**********Algorithm************
+
+Step1:Start
+Step2:Enter characters and frequencies.
+Step3:Create a Min Heap.
+Step4:Select the two smallest frequencies.
+Step5:Combine them and create a new node.
+Step6:Insert the new node into the heap.
+Step7:Repeat steps 4–6 until one node remains.
+Step8:Create Huffman codes:Left = 0,Right =1
+Step9:Print each character and its code.
+Step10:Stop.
+
+
+******Source code******
+*/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -140,3 +164,12 @@ int main() {
     HuffmanCodes(arr, freq, size);
     return 0;
 }
+/* Output
+Huffman Codes:
+f: 0
+c: 100
+d: 101
+a: 1100
+b: 1101
+e: 111
+*/
