@@ -1,3 +1,27 @@
+/* Name:Aswani p.j
+   Roll No :CS05
+   Date :
+*******************************
+Ex No:14
+Aim: Implementation  of  graphs  and  graph  traversals.
+
+
+**********Algorithm************
+
+Step1:Start
+Step2:Enter the number of vertices and edges.
+Step3:Create the graph using an adjacency matrix.
+Step4:Enter all edges.
+Step5:Enter the starting vertex.
+Step6:BFS: Use a queue and visit the vertices level by level.
+Step7:DFS: Use recursion and visit vertices deeply one by one.
+Step8:Print the BFS and DFS traversal.
+Step9:Stop.
+
+
+******Source code******
+*/
+
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -88,3 +112,18 @@ int main() {
 
     return 0;
 }
+
+/* Output
+
+Enter number of vertices: 5
+Enter number of edges: 5
+Enter edge (source destination): 0 1
+Enter edge (source destination): 0 2
+Enter edge (source destination): 1 3
+Enter edge (source destination): 1 4
+Enter edge (source destination): 2 4
+Enter start vertex for traversal: 0
+
+BFS Traversal: 0 1 2 3 4
+DFS Traversal: 0 1 3 4 2
+*/
