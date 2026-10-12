@@ -1,3 +1,27 @@
+/* Name:Aswani p.j
+   Roll No :CS05
+   Date :
+*******************************
+Ex No:15
+Aim: Implementation  of  heap  tree  and  operations.
+
+
+**********Algorithm************
+
+Step1:Start
+Step2:Insert the element into the heap.
+Step3:Compare it with its parent.
+Step4:If it is bigger, swap them.
+Step5:Repeat until the Max Heap is correct.
+Step6:To delete root, replace root with the last element.
+Step7:Apply Max Heapify.
+Step8:Display the heap.
+Step9:Stop.
+
+
+******Source code******
+*/
+
 #include <stdio.h>
 
 void swap(int* a, int* b) {
@@ -78,3 +102,27 @@ int main() {
     }
     return 0;
 }
+/* Output
+1. Insert
+2. Delete Root
+3. Display
+4. Exit
+Enter choice: 1
+Enter value to insert: 50
+
+Enter choice: 1
+Enter value to insert: 30
+
+Enter choice: 1
+Enter value to insert: 70
+
+Enter choice: 3
+Heap elements: 70 30 50
+
+Enter choice: 2
+
+Enter choice: 3
+Heap elements: 50 30
+
+Enter choice: 4
+*/
