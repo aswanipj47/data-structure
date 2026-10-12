@@ -1,4 +1,28 @@
+/* Name:Aswani p.j
+   Roll No :CS05
+   Date :
+*******************************
+Ex No:13
+Aim:Conversion  of  an  infix  expression  to  the  postfix  form  using  stacks.
 
+
+**********Algorithm************
+
+Step1:Start
+Step2:Read the infix expression.
+Step3:Create an empty stack.
+Step4:Read each character one by one.
+Step5:If it is an operand, add it to postfix.
+Step6:If it is (, push it into the stack.
+Step7:If it is ), pop until ( is found.
+Step8:If it is an operator, pop operators with higher or equal precedence, then push the operator.
+Step9:After reading all characters, pop the remaining operators.
+Step10:Display the postfix expression.
+Step11:Stop.
+
+
+******Source code******
+*/
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
@@ -100,3 +124,7 @@ void infixtopostfix(char* infix, char* postfix){
 }
 
 /* Output
+	
+Enter infix expression : A+B*C
+Postfix expression : ABC*+
+*/
