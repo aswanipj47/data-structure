@@ -2,9 +2,9 @@
    Roll No :CS05
    Date :
 *******************************
+
 Ex No:12
 Aim: Implementation  of  heap  sort.
-
 
 **********Algorithm************
 
@@ -19,9 +19,9 @@ Step8:Repeat steps 5–7 until all elements are sorted.
 Step9:Display the sorted array.
 Step10:Stop.
 
-
 ******Source code******
 */
+
 #include<stdio.h>
 int i,temp;
 void heapify(int arr[],int n,int i){
@@ -65,6 +65,7 @@ return 0;
 }
 /* 
 Output
+
 Enter the no of elements:
  4
 Enter the elements of array:
