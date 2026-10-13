@@ -2,9 +2,9 @@
    Roll No :CS05
    Date :
 *******************************
+
 Ex No:5
 Aim: Implementation of stack using Linked list
-
 
 **********Algorithm************
 
@@ -19,10 +19,8 @@ Step8:If Exit: Stop the program.
 Step9:Repeat the menu until the user selects Exit.
 Step10:Stop
 
-
 ******Source code******
 */
-
 
 #include<stdio.h>
 #include<stdlib.h>
@@ -95,9 +93,10 @@ Step10:Stop
   while(c!=4);
   return 0;
   }
-/* Output
+/* 
+Output
 
-   1.push
+1.push
 2.pop
 3.peep
 4.exit
