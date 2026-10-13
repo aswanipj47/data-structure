@@ -21,7 +21,7 @@ Step9:Stop
 
 ******Source code******
 */
-      #include <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct Node {
