@@ -2,9 +2,9 @@
    Roll No :CS05
    Date :
 *******************************
+
 Ex No:2
 Aim: Implementation of queue using arrays. 
-
 
 **********Algorithm************
 
@@ -18,10 +18,8 @@ Step7:Display: Display all queue elements.
 Step8:Repeat until Exit.
 Step9:Stop.
 
-
 ******Source code******
 */
-
 
 #include<stdio.h>
 #define SIZE 5
@@ -89,7 +87,8 @@ int main(){
   }while(c!=4);
 return 0;
 }
-/* Output
+/*
+Output
 
 Queue Array
 1.enqueue
