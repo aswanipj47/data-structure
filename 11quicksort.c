@@ -2,9 +2,9 @@
    Roll No :CS05
    Date :
 *******************************
+
 Ex No:11
 Aim: Implementation  of  quick  sort.
-
 
 **********Algorithm************
 
@@ -17,9 +17,9 @@ Step6:Repeat the same process for the left and right parts.
 Step7:Stop when the array is sorted.
 Step8:Stop.
 
-
 ******Source code******
 */
+
 #include <stdio.h>
 void swap(int* a, int* b);
 int partition(int arr[], int low, int high) {
@@ -63,6 +63,8 @@ int main() {
     return 0;
 }
 
-/* Output
+/*
+Output
+
 1 5 7 8 9 10
 */
