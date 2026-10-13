@@ -2,10 +2,9 @@
    Roll No :CS05
    Date :
 *******************************
+
 Ex No:10
 Aim: Implementation  of  binary  search  trees  and  perform  the    operations  on  BST.
-
-
 
 **********Algorithm************
 
@@ -22,6 +21,7 @@ Step9:Stop.
 
 ******Source code******
 */
+
 #include<stdio.h>
 #include<stdlib.h>
 struct node{
@@ -120,10 +120,10 @@ int main()
   return 0;
   }
 }
+/* 
+Output
 
-/* Output
-
-   Enter no of nodes:4
+Enter no of nodes:4
 Enter values:10 20 30 40
 binary search tree:10 20 30 40
 Enter value to search:20
