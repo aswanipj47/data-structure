@@ -2,9 +2,9 @@
    Roll No :CS05
    Date :
 *******************************
+
 Ex No:20
 Aim: Implementation  of  hashing  using  separate  chaining.   
-
 
 **********Algorithm************
 
@@ -18,7 +18,6 @@ Step7:Otherwise, add the node at the end of the linked list.
 Step8:For display, visit each index and print the values.
 Step9:If choice is 3, exit.
 Step10:Stop.
-
 
 ******Source code******
 */
@@ -100,8 +99,8 @@ int main() {
     }
     return 0;
 }
-
-/* Output
+/* 
+Output
 
 1. Insert
 2. Display
