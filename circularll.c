@@ -9,110 +9,192 @@ Aim: Implementation of circular linkedlist
 **********Algorithm************
 
 Step1:Start
-Step2:Create a circular linked list by inserting nodes at the end.
-Step3:If the list is empty, make the new node as head.
-Step4:Otherwise, find the last node and connect the new node to head.
-Step5:Display all nodes until temp reaches head again.
-Step6:To delete a node, search for the given value.
-Step7:If the value is found, adjust the links and delete the node.
-Step8:Display the list after deletion.
+Step2:Initialize the list as empty.
+Step3:Display the menu for insert, delete, display, and exit operations.
+Step4:Read the user's choice.
+Step5:Insert a node at the beginning, end, or given position based on the choice.
+Step6:Delete the specified node if it exists in the list.
+Step7:Display all nodes in the circular linked list.
+Step8:Repeat the menu until the user selects Exit.
 Step9:Stop
 
 
 ******Source code******
 */
-  #include <stdio.h>
-  #include <stdlib.h>
-  struct Node {
-      int data;
-      struct Node *next;
-  };
-  struct Node *head = NULL;
-  void insertEnd(int value) {
-      struct Node *newNode = malloc(sizeof(struct Node));
-      if (newNode == NULL) {
-          printf("Memory allocation failed\n");
-          return;
-      }
-    newNode->data = value;
-      if (head == NULL) {
-          head = newNode;
-          newNode->next = head;
-          return;
-      }
-      struct Node *temp = head;
-   while (temp->next != head) {
-          temp = temp->next;
-      }
-      temp->next = newNode;
-      newNode->next = head;
-  }
-  void display() {
-      if (head == NULL) {
-          printf("List is empty\n");
-          return;
-      }
-      struct Node *temp = head;
-    do {
-          printf("%d -> ", temp->data);
-          temp = temp->next;
-      } while (temp != head);
-      printf("(head)\n");
-  }
-  void deleteNode(int value) {
-      if (head == NULL) {
-          printf("List is empty\n");
-          return;
-      }
-      struct Node *current = head;
-      struct Node *previous = NULL;
-      do {
-          if (current->data == value)
-              break;
-          previous = current;
-        current = current->next;
-      } while (current != head);
-     if (current->data != value) {
-          printf("Value not found\n");
-          return;
-      }
-      if (current == head && head->next == head) {
-          free(head);
-          head = NULL;
-          return;
-      }
-      if (current == head) {
-          struct Node *last = head;
-          while (last->next != head) {
-              last = last->next;
-          }
-          head = head->next;
-          last->next = head;
-          free(current);
-      }
-    else {
-      previous->next = current->next;
-        free(current);
-    }
-}
-int main() {
-    insertEnd(10);
-    insertEnd(20);
-    insertEnd(30);
-  insertEnd(40);
-    printf("Circular Linked List:\n");
-    display();
-    deleteNode(20);
-    printf("After deleting 20:\n");
-    display();
-    return 0;
-}
-/*
-   ********** OUTPUT *********
+      #include <stdio.h>
+#include <stdlib.h>
 
- Circular Linked List:
- 10 -> 20 -> 30 -> 40 -> (head)
- After deleting 20:
- 10 -> 30 -> 40 -> (head)
+typedef struct Node {
+  int data;
+  struct Node* next;
+  struct Node* prev;
+} n;
+
+n* head = NULL;
+
+n* crnod(int val) {
+  n* nn = (n*)malloc(sizeof(n));
+  nn->data = val;
+  nn->next = nn;
+  nn->prev = nn;
+  return nn;
+}
+
+void insbeg(int val) {
+  n* nn = crnod(val);
+  if (head == NULL) {
+    head = nn;
+  } else {
+    n* tail = head->prev;
+    nn->next = head;
+    nn->prev = tail;
+    head->prev = nn;
+    tail->next = nn;
+    head = nn;
+  }
+  printf("Inserted %d at the beginning.", val);
+}
+
+void append(int val) {
+  n* nn = crnod(val);
+  if (head == NULL) {
+    head = nn;
+  } else {
+    n* tail = head->prev;
+    tail->next = nn;
+    nn->prev = tail;
+    nn->next = head;
+    head->prev = nn;
+  }
+  printf("Inserted %d at the end.", val);
+}
+
+void insatpos(int val, int pos) {
+  if (head == NULL) {
+    printf("List is empty.");
+    return;
+  }
+  n* temp = head;
+  do {
+    if (temp->data == pos) {
+      n* nn = crnod(val);
+      nn->next = temp->next;
+      nn->prev = temp;
+      temp->next->prev = nn;
+      temp->next = nn;
+      printf("Inserted %d after %d.", val, pos);
+      return;
+    }
+    temp = temp->next;
+  } while (temp != head);
+  
+  printf("Value %d not found in list.", pos);
+}
+
+void delNode(int val) {
+  if (head == NULL) {
+    printf("List is empty.");
+    return;
+  }
+  n* temp = head;
+  do {
+    if (temp->data == val) {
+      if (temp->next == temp) { // Only one node
+        head = NULL;
+      } else {
+        temp->prev->next = temp->next;
+        temp->next->prev = temp->prev;
+        if (temp == head) {
+          head = temp->next;
+        }
+      }
+      free(temp);
+      printf("Deleted %d from the list.", val);
+      return;
+    }
+    temp = temp->next;
+  } while (temp != head);
+  
+  printf("Element %d not found in the list.", val);
+}
+
+void display() {
+  if (head == NULL) {
+    printf("List is empty.");
+    return;
+  }
+  n* temp = head;
+  printf("Circular Linked List: ");
+  do {
+    printf("%d -> ", temp->data);
+    temp = temp->next;
+  } while (temp != head);
+  printf("(head)");
+}
+
+int main() {
+  int choice, val, pos;
+  while (1) {
+    printf("\n--- Circular Linked List Operations Menu ---\n1. Insert at Beginning\n2. Insert at End\n3. Insert In Between (at Position)\n4. Delete a Node\n5. Display\n6. Exit\nEnter your choice: ");
+    if (scanf("%d", &choice) != 1) return 0;
+    switch (choice) {
+      case 1:
+        printf("Enter value to insert at beginning: ");
+        if (scanf("%d", &val) == 1) insbeg(val);
+        break;
+      case 2:
+        printf("Enter value to insert at end: ");
+        if (scanf("%d", &val) == 1) append(val);
+        break;
+      case 3:
+        printf("Enter value to insert: ");
+        if (scanf("%d", &val) == 1) {
+          display();
+          printf("Enter preceding record: ");
+          if (scanf("%d", &pos) == 1) { insatpos(val, pos); }
+        }
+        break;
+      case 4:
+        printf("Enter value to delete: ");
+        if (scanf("%d", &val) == 1) delNode(val);
+        break;
+      case 5:
+        display();
+        break;
+      case 6:
+        exit(0);
+      default:
+        printf("Invalid choice. Please try again.");
+  } }
+  return 0;
+}
+
+/*
+OUTPUT 
+--- Circular Linked List Operations Menu ---
+1. Insert at Beginning
+2. Insert at End
+3. Insert In Between (at Position)
+4. Delete a Node
+5. Display
+6. Exit
+
+Enter your choice: 1
+Enter value to insert at beginning: 10
+
+Enter your choice: 2
+Enter value to insert at end: 20
+
+Enter your choice: 5
+Circular Linked List: 10 -> 20 -> (head)
+
+Enter your choice: 4
+Enter value to delete: 10
+Deleted 10 from the list.
+
+Enter your choice: 5
+Circular Linked List: 20 -> (head)
+
+Enter your choice: 6
 */
        
