@@ -2,9 +2,9 @@
    Roll No :CS05
    Date :
 *******************************
+
 Ex No:1
 Aim: Implementation of stack using arrays
-
 
 **********Algorithm************
 
@@ -19,10 +19,8 @@ Step8:Peek: Display the top element.
 Step9:Repeat until Exit.
 Step10:Stop.
 
-
 ******Source code******
 */
-
 
 #include<stdio.h>
 int s[10],n,top=-1;
@@ -80,7 +78,9 @@ int main(){
   }while(c!=4);
 return 0;
 }
-/* Output
+/* 
+Output
+
 Enter size of array
 5
 
