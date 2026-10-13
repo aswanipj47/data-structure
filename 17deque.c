@@ -2,9 +2,9 @@
    Roll No :CS05
    Date :
 *******************************
+
 Ex No:17
 Aim: Implementation  of  Deque (double ended  queue).
-
 
 **********Algorithm************
 
@@ -22,10 +22,8 @@ Step11:Erase: Delete all elements.
 Step12:Repeat operations until Exit.
 Step13:Stop.
 
-
 ******Source code******
 */
-
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -203,7 +201,8 @@ int main() {
 
     return 0;
 }
-/* Output
+/* 
+Output
 --- Deque Operations Menu ---
 1. Insert Front
 2. Insert Rear
