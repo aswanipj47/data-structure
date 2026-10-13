@@ -2,9 +2,9 @@
    Roll No :CS05
    Date :
 *******************************
+
 Ex No:13
 Aim:Conversion  of  an  infix  expression  to  the  postfix  form  using  stacks.
-
 
 **********Algorithm************
 
@@ -20,9 +20,9 @@ Step9:After reading all characters, pop the remaining operators.
 Step10:Display the postfix expression.
 Step11:Stop.
 
-
 ******Source code******
 */
+
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
