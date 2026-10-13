@@ -2,9 +2,9 @@
    Roll No :CS05
    Date :
 *******************************
+
 Ex No:9
 Aim: Implementation  of  binary  tree  and  traversals.
-
 
 **********Algorithm************
 
@@ -19,10 +19,8 @@ Step8:Perform Postorder traversal: Left → Right → Root.
 Step9:Display all three traversals.
 Step10:Stop.
 
-
 ******Source code******
 */
-
 
 #include<stdio.h>
 #include<stdlib.h>
@@ -85,8 +83,8 @@ int main(){
         printf("\n");
         return 0;
 }
-
-/* Output
+/* 
+Output
 
 Enter the no of nodes:
 4
