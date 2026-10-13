@@ -2,9 +2,9 @@
    Roll No :CS05
    Date :
 *******************************
+
 Ex No:18
 Aim: Implementation  of  priority queue.
-
 
 **********Algorithm************
 
@@ -17,7 +17,6 @@ Step6:Rearrange the heap after deletion.
 Step7:Display: Print all elements and their priorities.
 Step8:Repeat until the user selects Exit.
 Step9:Stop.
-
 
 ******Source code******
 */
@@ -157,7 +156,9 @@ int main() {
 
     return 0;
 }
-/* Output
+/*
+Output
+
 1. Enqueue
 2. Dequeue
 3. Display
