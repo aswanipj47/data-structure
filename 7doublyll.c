@@ -2,9 +2,9 @@
    Roll No :CS05
    Date :
 *******************************
+
 Ex No:7
 Aim: Implementation of Doubly Linkedlist. 
-
 
 **********Algorithm************
 
@@ -16,10 +16,8 @@ Step5:Delete nodes from the beginning, end, and given position.
 Step6:Display the list after deletion.
 Step7:Stop.
 
-
 ******Source code******
 */
-
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -214,9 +212,10 @@ int main()
 
     return 0;
 }
-/* Output
+/* 
+Output
 
-   After Insertions:
+After Insertions:
 Forward List: 5 15 10 20
 Reverse List: 20 10 15 5
 After Deletions:
