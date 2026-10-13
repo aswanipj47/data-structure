@@ -2,9 +2,9 @@
    Roll No :CS05
    Date :
 *******************************
+
 Ex No:3
 Aim:  Implementation  of  circular  queue  using  arrays.
-
 
 **********Algorithm************
 
@@ -22,7 +22,6 @@ Step10:Stop.
 
 ******Source code******
 */
-
 
 #include<stdio.h>
 #define SIZE 5
@@ -100,10 +99,10 @@ int main(){
   }while(c!=4);
 return 0;
 }
+/* 
+Output
 
-/* Output
-
-  CircularQueue using Array
+CircularQueue using Array
 1.enqueue
 2.dequeue
 3.display
