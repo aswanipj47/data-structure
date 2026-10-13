@@ -2,9 +2,9 @@
    Roll No :CS05
    Date :
 *******************************
+
 Ex No:15
 Aim: Implementation  of  heap  tree  and  operations.
-
 
 **********Algorithm************
 
@@ -17,7 +17,6 @@ Step6:To delete root, replace root with the last element.
 Step7:Apply Max Heapify.
 Step8:Display the heap.
 Step9:Stop.
-
 
 ******Source code******
 */
@@ -102,7 +101,9 @@ int main() {
     }
     return 0;
 }
-/* Output
+/* 
+Output
+
 1. Insert
 2. Delete Root
 3. Display
