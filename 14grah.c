@@ -2,9 +2,9 @@
    Roll No :CS05
    Date :
 *******************************
+
 Ex No:14
 Aim: Implementation  of  graphs  and  graph  traversals.
-
 
 **********Algorithm************
 
@@ -18,10 +18,8 @@ Step7:DFS: Use recursion and visit vertices deeply one by one.
 Step8:Print the BFS and DFS traversal.
 Step9:Stop.
 
-
 ******Source code******
 */
-
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -112,8 +110,8 @@ int main() {
 
     return 0;
 }
-
-/* Output
+/* 
+Output
 
 Enter number of vertices: 5
 Enter number of edges: 5
