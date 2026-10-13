@@ -2,9 +2,9 @@
    Roll No :CS05
    Date :
 *******************************
+
 Ex No:16
 Aim: Implementation  of  Huffman  algorithm.
-
 
 **********Algorithm************
 
@@ -18,7 +18,6 @@ Step7:Repeat steps 4–6 until one node remains.
 Step8:Create Huffman codes:Left = 0,Right =1
 Step9:Print each character and its code.
 Step10:Stop.
-
 
 ******Source code******
 */
@@ -164,7 +163,9 @@ int main() {
     HuffmanCodes(arr, freq, size);
     return 0;
 }
-/* Output
+/*
+Output
+
 Huffman Codes:
 f: 0
 c: 100
