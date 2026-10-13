@@ -2,9 +2,9 @@
    Roll No :CS05
    Date :
 *******************************
+
 Ex No:4
 Aim: Implementation of Linkedlists and operations on linkedlists. 
-
 
 ***********Algorithm************
 
@@ -15,7 +15,6 @@ Step4:Delete: If the list is empty, display empty; otherwise, delete the first n
 Step5:Display: Traverse from head to NULL and print each node.
 Step6:Repeat the operations using the menu until the user selects Exit.
 Step7:Stop.
-
 
 ******Source code******
 */
@@ -93,10 +92,10 @@ int main(){
         }while(c!=4);
   return 0;
 }
+/* 
+Output
 
-/* Output
-
-   Linkedlist
+Linkedlist
 1.Insert
 2.Delete
 3.Display
