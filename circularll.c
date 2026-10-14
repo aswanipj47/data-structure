@@ -2,9 +2,9 @@
    Roll No :CS05
    Date :04-08-2026
 *******************************
+
 Ex No:8
 Aim: Implementation of circular linkedlist
-
 
 **********Algorithm************
 
@@ -18,9 +18,9 @@ Step7:Display all nodes in the circular linked list.
 Step8:Repeat the menu until the user selects Exit.
 Step9:Stop
 
-
 ******Source code******
 */
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -168,9 +168,9 @@ int main() {
   } }
   return 0;
 }
-
 /*
 OUTPUT 
+
 --- Circular Linked List Operations Menu ---
 1. Insert at Beginning
 2. Insert at End
