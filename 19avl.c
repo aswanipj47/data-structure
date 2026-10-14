@@ -2,9 +2,9 @@
    Roll No :CS05
    Date :05-10-2026
 *******************************
+
 Ex No:19
 Aim: Implementation of   AVL  tree (balanced  tree).
-
 
 **********Algorithm************
 
@@ -17,10 +17,8 @@ Step6:Display the tree using inorder, preorder, or postorder.
 Step7:Repeat until Exit.
 Step8:Stop.
 
-
 ******Source code******
 */
-
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -211,7 +209,9 @@ int main() {
     }
     return 0;
 }
-/* Output
+/* 
+Output
+
 ==== AVL Tree Menu =====
 1. Insertion
 2. Search
